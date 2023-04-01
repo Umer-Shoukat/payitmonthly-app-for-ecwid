@@ -46,7 +46,11 @@ if (isset($_POST["data"])) {
 
   // The resulting JSON from payment request will be in $order variable
   $order = getEcwidPayload($client_secret, $ecwid_payload);
-
+  //  echo $item_description = $order['cart']['order']['items'][0]['shortDescription'];
+  //  exit;
+  // $my_json_data  = json_encode($order);
+  // echo $my_json_data;
+  // exit;
 
   // Account info from merchant app settings in app interface in Ecwid CP
   $x_account_id = $order['merchantAppSettings']['merchantId'];
@@ -65,7 +69,7 @@ if (isset($_POST["data"])) {
 
   $order_value  = $order['cart']['order']['total'];
 
-  $item_description = $order['cart']['items']['shortDescription'];
+  $item_description = $order['cart']['order']['items'][0]['shortDescription'];
 
   $currency = $order['cart']['currency'];
 
