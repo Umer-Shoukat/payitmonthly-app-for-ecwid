@@ -1,0 +1,33 @@
+.bg-info {
+    background-color: #0e7ad4 !important;
+}
+
+.btn-info {
+    background-color: #0e7ad4 !important;
+    border-color: #0e7ad4 !important;
+}
+
+.border-primary {
+    border-color: #0e7ad4 !important;
+}
+
+.fa-envelope:before {
+    display:none;
+}
+
+.fa-user:before {
+    display:none;
+}
+
+.body {
+    font-family: Source Sans Pro;
+}
+p.payitMonthly-banner {
+    background-color: purple !important;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px !important;
+    text-align: center;
+    margin-top: 18px !important;
+}
